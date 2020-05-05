@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+
+  build:
+    commands:
+       - git clone https://github.com/SAP/openui5-sample-app.git
+       - cp -Ra openui5-sample-app/. .
+       - cp -Ra fiori/. .
+       - npm install karma-junit-reporter
+       - rm -rf node_modules
+       - ls -al
+       
+artifacts:
+  files:
+    - '**/*' 

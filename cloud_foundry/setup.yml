@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk11
+
+  build:
+    commands:
+       - mvn archetype:generate -DgroupId=com.mycompany.cloud -DartifactId=sap-scp-cloud-foundry-java-app -DinteractiveMode=false -DarchetypeGroupId=com.sap.cloud.s4hana.archetypes -DarchetypeArtifactId=scp-cf-tomee -DarchetypeVersion=RELEASE
+       - cp -R sap-scp-cloud-foundry-java-app/. .
+       - cp -R cloud_foundry/. .
+       - ls -l
+
+artifacts:
+  files:
+    - '**/*' 

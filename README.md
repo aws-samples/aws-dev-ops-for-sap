@@ -1,13 +1,12 @@
-## My Project
+# AWS Dev Ops for SAP
 
-TODO: Fill this README out!
+Workshop | Status
+--- | --- | ---
+Cloud Foundry | ![CFStatus](https://d2k07ywv1m6rt9.cloudfront.net/aws-dev-ops-for-sap-cf.svg)
+Fiori | ![FioriStatus](https://d2k07ywv1m6rt9.cloudfront.net/aws-dev-ops-for-sap-fiori.svg)
 
-Be sure to:
+See blog post and [workshop](https://www.saponaws.aworkshop.io/500-devops.html) for more info.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+# License
 
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+This sample code is licensed under the MIT-0 License. See the [LICENSE](LICENSE) file.  

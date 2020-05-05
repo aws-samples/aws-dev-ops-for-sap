@@ -1,0 +1,23 @@
+version: 0.2
+
+env:
+  parameter-store:
+    SCP_USER: SCP_USER
+    SCP_PW: SCP_PW
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+
+  build:
+    commands:
+       - wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | apt-key add
+       - echo "deb https://packages.cloudfoundry.org/debian stable main" | tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+       - apt-get update
+       - apt-get install cf-cli
+       - cf api https://api.cf.eu10.hana.ondemand.com
+       - echo "Deploying as"
+       - echo $SCP_USER
+       - cf login -u $SCP_USER -p $SCP_PW -o S0020174042trial_AWSmarcel -s dev
+       - cf push

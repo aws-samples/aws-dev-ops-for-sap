@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /codedeploy/sapfioriapp
+hooks:
+  BeforeInstall:
+    - location: appspec_cleanup.sh
+  AfterInstall:
+    - location: appspec_deploy.sh
+      timeout: 180

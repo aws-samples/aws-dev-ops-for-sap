@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+
+  build:
+    commands:
+       - npm install --global @ui5/cli
+       - npm install
+       - ui5 build -a
+       - npm test
+
+reports: #New
+  FioriReports: # CodeBuild will create a report group called "FioriReports".
+    files: #Store all of the files
+      - '**/*.xml'
+    base-directory: 'junit' # Location of the reports
+    #file-format: CucumberJson #Type of the report, defaults to JunitXml
+    
+artifacts:
+  files:
+    - dist/*
+    - appspec.yml
+    - appspec_deploy.sh
+    - appspec_cleanup.sh
+    - Gruntfile.js
