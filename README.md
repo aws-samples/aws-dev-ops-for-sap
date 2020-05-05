@@ -1,11 +1,13 @@
 # AWS Dev Ops for SAP
 
+Sample and test code for using AWS DevOps Tools with SAP Solutions
+
 Workshop | Status
 --- | ---
 Cloud Foundry | ![CFStatus](https://d2k07ywv1m6rt9.cloudfront.net/aws-dev-ops-for-sap-cf.svg)
 Fiori | ![FioriStatus](https://d2k07ywv1m6rt9.cloudfront.net/aws-dev-ops-for-sap-fiori.svg)
 
-See blog post and [workshop](https://www.saponaws.aworkshop.io/500-devops.html) for more info.
+See the related [blog posts](https://aws.amazon.com/blogs/awsforsap/) and [workshop](https://www.saponaws.aworkshop.io/500-devops.html) for more info.
 
 # License
 
