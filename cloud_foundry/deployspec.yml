@@ -4,6 +4,7 @@ env:
   parameter-store:
     SCP_USER: SCP_USER
     SCP_PW: SCP_PW
+    SCP_OU: SCP_OU
 
 phases:
   install:
@@ -19,5 +20,5 @@ phases:
        - cf api https://api.cf.eu10.hana.ondemand.com
        - echo "Deploying as"
        - echo $SCP_USER
-       - cf login -u $SCP_USER -p $SCP_PW -o S0020174042trial_AWSmarcel -s dev
+       - cf login -u $SCP_USER -p $SCP_PW -o $SCP_OU -s dev
        - cf push
