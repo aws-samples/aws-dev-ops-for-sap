@@ -2,7 +2,7 @@
 
 Sample and test code for using AWS DevOps Tools with SAP Solutions.  
 
-See the related [blog posts](https://aws.amazon.com/blogs/awsforsap/) and [workshop](https://www.saponaws.aworkshop.io/500-devops.html) for more info.
+See the related [blog posts](https://aws.amazon.com/blogs/awsforsap/) and [workshop material](https://basis-beyond-immersionday.workshop.aws/aws-devops.html) for more info.
 
 Workshop | Status
 --- | ---
